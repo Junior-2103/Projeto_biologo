@@ -2,6 +2,7 @@ import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI as genai
 from langchain_core.prompts import ChatPromptTemplate
 
+st.title('Chat com BiologIA')
 api = st.sidebar.text_input('Coloque a api')
 if api == '19996865107':
     st.success('Senha correta!')
