@@ -6,7 +6,7 @@ st.title('Chat com BiologIA')
 api = st.sidebar.text_input('Coloque a api')
 if api == '19996865107':
     st.success('Senha correta!')
-    api_key = st.secrets["GOOGLE_API_KEY"]
+    api_key = st.secrets["google_api_key"]
     llm = genai(
         model='models/gemini-1.5-flash',
         temperature=0.1,
