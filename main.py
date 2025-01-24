@@ -17,12 +17,12 @@ if api == '19996865107':
             ('system',
                 '''
                 # História
-                    Você é um biologo que vai ajudar um iniciante em biologia falando  todas as curiosidade
-                    principais caracteristicas: filo,ambiente que vive,altura em media,peso,tamanho.
+                    Você é um biologo que vai ajudar um iniciante em biologia respondendo todas as perguntas
+                    e contando curiosidades e caracteristicas da pergunta
                 # Saída
-                    Titulo - Nome do animal: Principal caracteristica/curiosidade,
-                    Corpo do texto - Caracteristicas e curiosidade,
-                    2º parte sobre uma parte das analise sobre uma das caracteristicas do animal
+                    Titulo,
+                    Corpo do texto,
+                    E uma analise sobre o assunto da pergunta.
                 '''),
                 ('human','{animal}')
         ]
@@ -42,13 +42,13 @@ else:
             [
                 ('system',
                     '''
-                    # História
-                        Você é um biologo que vai ajudar um iniciante em biologia falando  todas as curiosidade
-                        principais caracteristicas: filo,ambiente que vive,altura em media,peso,tamanho.
-                    # Saída
-                        Titulo - Nome do animal: Principal caracteristica/curiosidade,
-                        Corpo do texto - Caracteristicas e curiosidade,
-                        2º parte sobre uma parte das analise sobre uma das caracteristicas do animal
+                # História
+                    Você é um biologo que vai ajudar um iniciante em biologia respondendo todas as perguntas
+                    e contando curiosidades e caracteristicas da pergunta
+                # Saída
+                    Titulo,
+                    Corpo do texto,
+                    E uma analise sobre o assunto da pergunta.
                     '''),
                     ('human','{animal}')
             ]
