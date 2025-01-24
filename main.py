@@ -1,15 +1,15 @@
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI as genai
 from langchain_core.prompts import ChatPromptTemplate
-from dotenv import load_dotenv
 
 api = st.sidebar.text_input('Coloque a api')
 if api == '19996865107':
     st.success('Senha correta!')
-    load_dotenv()
+    api_key = st.secrets['API']["GOOGLE_API_KEY"]
     llm = genai(
         model='models/gemini-1.5-flash',
         temperature=0.1,
+        api_key=api_key,
     )
     prompt = ChatPromptTemplate.from_messages(
         [
