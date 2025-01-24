@@ -1,7 +1,7 @@
 import streamlit as st
-from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI as genai
 from langchain_core.prompts import ChatPromptTemplate
+from dotenv import load_dotenv
 
 api = st.sidebar.text_input('Coloque a api')
 if api == '19996865107':
